@@ -36,7 +36,7 @@
         <P>“Trusted third parties are security holes.” – Nick Szabo</P>
       </section>
       <section>
-        <h3>This is FUBAR (FUBAR Universal Blockchain Anonymous Registration)</h3>
+        <h3>This is FUBAR: Universal Blockchain Anonymous Registration</h3>
         <img src="docs/fp.png" alt="FOOBY" style="width:300px">
       </section>
       <section>
@@ -46,7 +46,7 @@
           <li>Secure</li>
           <li>Anonymous</li>
           <li>Autonomous</li>
-          <li>Sovereign</li>
+          <li>Self-Sovereign</li>
           <li>Libre</li>
           <li>Open Source</li>
           <li>Decentralized</li>
@@ -82,19 +82,30 @@
       <section>
         <p>
           <u>Technicality:</u>
-          Creating an ERC721 contract, getting web3.js to invoke contract functions.</p>
+          Creating an ERC721 contract, getting web3.js to invoke contract functions.
+        </p>
         <p>
           <u>Creativity:</u>
-          We drew inspiration from Colorado Coin and Bufficoin, integrating them into a revolutionary new concept.</p>
+          We innovated on the shoulders of Colorado Coin and Bufficoin, combining the concepts as components of a hackathon platform.
+        </p>
         <p>
           <u>Usefulness:</u>
-          Immediately useful at hackathons or any sort of event registration.</p>
+          Immediately useful as an event management platform for conferences, summits, hackathons, etc.
+        </p>
         <p>
           <u>Design:</u>
-          FOOBY</p>
+          <ul>
+            <li>Responsive progressive web app utilizing Material Design</li>
+            <li>Fooby mascot image</li>
+          </ul>
+        </p>
         <p>
           <u>Makes the World a Better Place:</u>
-          It gives you more control of your personal information.</p>
+          <ul>
+            <li>Decentralizes and anonymizes personal information at blockchain events</li>
+            <li>Educates users about the importance of self-sovereign identity</li>
+          </ul>
+        </p>
       </section>
     </div>
   </div>
@@ -108,23 +119,22 @@
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
       dependencies: [{
-          src: 'docs/plugin/markdown/marked.js'
-        },
-        {
-          src: 'docs/plugin/markdown/markdown.js'
-        },
-        {
-          src: 'docs/plugin/notes/notes.js',
-          async: true
-        },
-        {
-          src: 'docs/plugin/highlight/highlight.js',
-          async: true,
-          callback: function () {
-            hljs.initHighlightingOnLoad();
-          }
+        src: 'docs/plugin/markdown/marked.js'
+      },
+      {
+        src: 'docs/plugin/markdown/markdown.js'
+      },
+      {
+        src: 'docs/plugin/notes/notes.js',
+        async: true
+      },
+      {
+        src: 'docs/plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
         }
-      ]
+      }]
     });
 
   </script>
@@ -134,40 +144,35 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
   <script>
     window.onload = function () {
-      Particles.
-      init
-        ({
+      Particles.init({
+        // Normal options
+        selector: '.background',
+        maxParticles: 100,
+        color: '#cfb87c',
+        connectParticles: true,
 
-          // normal options
-          selector: '.background',
-          maxParticles: 100,
-          color: '#cfb87c',
-          connectParticles: true,
-
-          // options for breakpoints
-          responsive: [{
-            breakpoint: 768,
-            options: {
-              maxParticles: 50,
-            }
-          }, {
-            breakpoint: 425,
-            options: {
-              maxParticles: 25,
-            }
-          }, {
-            breakpoint: 320,
-            options: {
-              maxParticles: 0
-
-              // disables particles.js
-            }
-          }]
-        });
+        // Options for breakpoints
+        responsive: [{
+          breakpoint: 768,
+          options: {
+            maxParticles: 50,
+          }
+        }, {
+          breakpoint: 425,
+          options: {
+            maxParticles: 25,
+          }
+        }, {
+          breakpoint: 320,
+          options: {
+            // Disables particles.js
+            maxParticles: 0
+          }
+        }]
+      });
     };
 
   </script>
 </body>
 
 </html>
-
