@@ -2,164 +2,173 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+  <title>reveal.js</title>
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/night.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css">
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName('head')[0].appendChild(link);
-	</script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+  </script>
 </head>
 
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h3>Problem:</h3>
-				<p>Blockchain hackathons should lead by example in the cryptography and privacy-minded community.</p>
-				<br>
-				<p>Registration currently requires giving personal identifying information (PII) to a trusted third party (TTP).</p>
-				<br>
-				<P>“Trusted third parties are security holes.” – Nick Szabo</P>
-			</section>
-			<section>
-				<h3>This is FUBAR (FUBAR Universal Blockchain Anonymous Registration)</h3>
-				<img src="./fp.png" alt="FOOBY" style="width:300px">
-			</section>
-			<section>
-			<h1>FUBAR is:</h1>
-			<ul>
-					<li>Trustless</li>
-					<li>Secure</li>
-					<li>Anonymous-ish</li>
-					<li>Blockchain</li>
-					<li>Sovereign</li>
-					<li>Free</li>
-					<li>Decentralized</li>
-					<li>Crypto-Cloud</li>
-					<li>Autonomous</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Features</h2>
-				<ul>
-					<li>Configurable Registration Form (add the fields you need)</li>
-					<li>Utilizes Metamask to issue a ERC721 token (Foobs) used as the ticket</li>
-					<li>Check-in with QR code, burns the ticket</li>
-					<li>Cancelling registration burns the ticket, increasing the event capacity</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Future</h2>
-				<ul>
-					<li>Speaker/presentation acceptance via public vote</li>
-					<ul>
-						<li>Weighted vote tokens (like Bufficoin)</li>
-					</ul>
-					<li>Automated IRC/Riot/Matrix invites</li>
-					<li>Email verification/updates</li>
-					<li>Role-based permissions</li>
-					<ul>
-						<li>Admin, Organizer, Volunteer, etc.</li>
-					</ul>
-				</ul>
-			</section>
-			<section>
-				<h1>Demo</h1>
-			</section>
-			<section>
-				<p><u>Technicality:</u>
-				Creating an ERC721 contract, getting web3.js to invoke contract functions.</p>
-				<p><u>Creativity:</u>
-						We drew inspiration from Colorado Coin and Bufficoin, integrating them into a revolutionary new concept.</p>
-				<p><u>Usefulness:</u>
-						Immediately useful at hackathons or any sort of event registration.</p>
-				<p><u>Design:</u>
-							FOOBY</p>
-				<p><u>Makes the World a Better Place:</u>
-					It gives you more control of your personal information.</p>
-			</section>
-		</div>
-	</div>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h3>Problem:</h3>
+        <p>Blockchain hackathons should lead by example in the cryptography and privacy-minded community.</p>
+        <br>
+        <p>Registration currently requires giving personal identifying information (PII) to a trusted third party (TTP).</p>
+        <br>
+        <P>“Trusted third parties are security holes.” – Nick Szabo</P>
+      </section>
+      <section>
+        <h3>This is FUBAR (FUBAR Universal Blockchain Anonymous Registration)</h3>
+        <img src="./fp.png" alt="FOOBY" style="width:300px">
+      </section>
+      <section>
+        <h1>FUBAR is:</h1>
+        <ul>
+          <li>Trustless</li>
+          <li>Secure</li>
+          <li>Anonymous-ish</li>
+          <li>Blockchain</li>
+          <li>Sovereign</li>
+          <li>Free</li>
+          <li>Decentralized</li>
+          <li>Crypto-Cloud</li>
+          <li>Autonomous</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>Configurable Registration Form (add the fields you need)</li>
+          <li>Utilizes Metamask to issue a ERC721 token (Foobs) used as the ticket</li>
+          <li>Check-in with QR code, burns the ticket</li>
+          <li>Cancelling registration burns the ticket, increasing the event capacity</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Future</h2>
+        <ul>
+          <li>Speaker/presentation acceptance via public vote</li>
+          <ul>
+            <li>Weighted vote tokens (like Bufficoin)</li>
+          </ul>
+          <li>Automated IRC/Riot/Matrix invites</li>
+          <li>Email verification/updates</li>
+          <li>Role-based permissions</li>
+          <ul>
+            <li>Admin, Organizer, Volunteer, etc.</li>
+          </ul>
+        </ul>
+      </section>
+      <section>
+        <h1>Demo</h1>
+      </section>
+      <section>
+        <p>
+          <u>Technicality:</u>
+          Creating an ERC721 contract, getting web3.js to invoke contract functions.</p>
+        <p>
+          <u>Creativity:</u>
+          We drew inspiration from Colorado Coin and Bufficoin, integrating them into a revolutionary new concept.</p>
+        <p>
+          <u>Usefulness:</u>
+          Immediately useful at hackathons or any sort of event registration.</p>
+        <p>
+          <u>Design:</u>
+          FOOBY</p>
+        <p>
+          <u>Makes the World a Better Place:</u>
+          It gives you more control of your personal information.</p>
+      </section>
+    </div>
+  </div>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true,
-					callback: function () {
-						hljs.initHighlightingOnLoad();
-					}
-				}
-			]
-		});
-	</script>
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
 
-	<!-- particles.js background -->
-	<canvas class="background"></canvas>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-	<script>
-		window.onload = function () {
-			Particles.
-			init
-				({
+  </script>
 
-					// normal options
-					selector: '.background',
-					maxParticles: 100,
-					color: '#cfb87c',
-					connectParticles: true,
+  <!-- particles.js background -->
+  <canvas class="background"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script>
+    window.onload = function () {
+      Particles.
+      init
+        ({
 
-					// options for breakpoints
-					responsive: [{
-						breakpoint: 768,
-						options: {
-							maxParticles: 50,
-						}
-					}, {
-						breakpoint: 425,
-						options: {
-							maxParticles: 25,
-						}
-					}, {
-						breakpoint: 320,
-						options: {
-							maxParticles: 0
+          // normal options
+          selector: '.background',
+          maxParticles: 100,
+          color: '#cfb87c',
+          connectParticles: true,
 
-							// disables particles.js
-						}
-					}]
-				});
-		};
-	</script>
+          // options for breakpoints
+          responsive: [{
+            breakpoint: 768,
+            options: {
+              maxParticles: 50,
+            }
+          }, {
+            breakpoint: 425,
+            options: {
+              maxParticles: 25,
+            }
+          }, {
+            breakpoint: 320,
+            options: {
+              maxParticles: 0
+
+              // disables particles.js
+            }
+          }]
+        });
+    };
+
+  </script>
 </body>
 
 </html>
+
